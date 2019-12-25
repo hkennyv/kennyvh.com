@@ -10,10 +10,8 @@ The vanilla html/css blog is ~2.5x faster than the gatsby blog. This is unfortun
 
 
 ![vanilla blog](vanillablog.png)
-Vanilla html/css blog
 
 ![private blog](privateblog.png)
-Private gatsby blo  g
 
 | blog         | speed index | size   |
 | ------------ | ----------- | ------ |
