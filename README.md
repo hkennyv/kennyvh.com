@@ -8,9 +8,10 @@ I also have a private blog that utilizes the [the-plain-gatsby](https://www.gats
 
 The vanilla html/css blog is ~2.5x faster than the gatsby blog. This is unfortunate, but you have to consider all of the great features you get with the gatsby blog including (but not limited to): image optimization, integration with netlify CMS, getting to use React (i've been having a blast with this), and many more thanks to the rich gatsby ecosystem.
 
-
-<img src="vanillablog.png" width="40%">
-<img src="privateblog.png" width="40%">
+<p align="middle">
+    <img src="vanillablog.png" width="40%">
+    <img src="privateblog.png" width="40%">
+</p>
 
 | blog         | speed index | size   |
 | ------------ | ----------- | ------ |
