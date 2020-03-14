@@ -16,9 +16,8 @@ export default class MainLayout extends React.Component {
           <html lang="en" />
         </Helmet>
         <Header menuLinks={config.menuLinks} />
-        <Home />
+        <main id="main-content">{children}</main>
         <Footer config={config} />
-        {/* {children} */}
       </div>
     );
   }
