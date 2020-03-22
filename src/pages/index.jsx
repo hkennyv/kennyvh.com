@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../layout";
 import About from "../components/About";
 import PostListing from "../components/PostListing";
@@ -52,8 +52,17 @@ class IndexPage extends Component {
         <Helmet title={`Kenny Huynh`} />
         <div className="container">
           {this.renderBio()}
-          <h3>LATEST POSTS</h3>
-          <PostListing postEdges={postEdges} />
+
+          <section>
+            <h2>Links</h2>
+          </section>
+
+          <section>
+            <h2>
+              Recent Posts <Link to="/blog">View All</Link>
+            </h2>
+            <PostListing postEdges={postEdges} />
+          </section>
         </div>
       </Layout>
     );
