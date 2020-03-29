@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d4dc1f87-eabe-4c35-bd5b-71bbb6bcbcae/deploy-status)](https://app.netlify.com/sites/epic-lamport-ce50c0/deploys)
+
 # khuynh-gatsby-theme
 author(s): khuynh
 
