@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Home from "../components/Home";
 import config from "../../data/SiteConfig";
-import "./index.css";
+import "../styles/index.scss";
 
 export default class MainLayout extends React.Component {
   render() {
