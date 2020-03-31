@@ -27,7 +27,7 @@ class IndexPage extends Component {
           laying out PCBs to writing drivers to software interfaces and APIs).
         </p>
         <p>
-          I'm originally from Tracy, CA and now live in
+          I'm originally from Tracy, CA and now live in{" "}
           <strong>Garden Grove, CA</strong>. Some of my interests outside of
           work include:
         </p>
