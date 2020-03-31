@@ -76,7 +76,7 @@ export const indexQuery = graphql`
   query IndexQuery {
     latest: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
-      limit: 3
+      limit: 5
     ) {
       edges {
         node {
