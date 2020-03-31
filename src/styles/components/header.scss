@@ -1,9 +1,78 @@
-.nav-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    max-width: $width;
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: white;
+
+  &.scroll {
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-container {
     padding: 0 1.5rem;
-    margin: auto;
     height: 55px;
+    max-width: $width;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: height 0.3s ease;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      line-height: 1.2rem;
+      padding: 0 0.75rem;
+
+      &:hover &:active {
+        color: #111;
+        background: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+@include small-breakpoint {
+  .nav {
+    &.scroll {
+      .nav-container {
+        height: 60px;
+      }
+    }
+
+    .nav-container {
+      height: 140px;
+      padding: 0 2rem;
+    }
+
+    .links {
+      display: flex;
+      height: 100%;
+
+      a {
+        margin: 0 0.5rem;
+        padding: 1rem;
+        border-bottom: 2px solid transparent;
+        border-radius: $border-radius;
+
+        &:hover,
+        &:active,
+        &.active {
+          color: #111;
+          background: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
 }

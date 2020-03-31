@@ -4,3 +4,21 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#main-content {
+    margin-top: 35px;
+    padding: 40px 0 0;
+    min-height: calc(100vh - 162px);
+}
+
+@include small-breakpoint {
+    #main-content {
+        margin-top: 120px;
+        padding: 60px 0 0;
+        min-height: calc(100vh - 219px);
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+}

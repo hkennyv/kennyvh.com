@@ -1,12 +1,17 @@
+html {
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+  font-family: $font-family;
+}
+
 // Link styling
 a {
-    color: $link-color;
-    text-decoration: none;
-    // font-weight: 600;
-  
-    &:hover,
-    &:active,
-    &:focus {
-      color: $link-hover-color;
-    }
+  color: $link-color;
+  text-decoration: none;
+  // font-weight: 600;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
   }
+}

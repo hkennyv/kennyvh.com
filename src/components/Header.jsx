@@ -39,7 +39,7 @@ export default class Header extends Component {
           <div className="brand">
             <Link to="/">
               {/* <img src={floppy} className="favicon" alt="Floppy Diskette" /> */}
-              <span className="text">Kenny</span>
+              <span className="text">Kenny Huynh</span>
             </Link>
           </div>
           <div className="links">
