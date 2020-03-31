@@ -15,7 +15,7 @@ class IndexPage extends Component {
           I'm a <strong>DevOps Engineer</strong> at{"  "}
           <a href="http://www.rejouleenergy.com/">
             <strong>ReJoule, Inc.</strong>
-          </a>
+          </a>{" "}
           We are an early-stage startup with an amazing team whose goal is to
           maximize the value of every battery through advanced battery
           diagnostics.

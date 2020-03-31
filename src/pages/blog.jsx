@@ -9,7 +9,7 @@ class BlogPage extends Component {
     const { children } = this.props;
     return (
       <Layout>
-        <div className="blog-container">
+        <div className="container">
           <Helmet title={`Blog | ${config.siteTitle}`} />
           <Blog children={children} />
         </div>

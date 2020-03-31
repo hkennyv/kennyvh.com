@@ -8,7 +8,7 @@ class MePage extends Component {
   render() {
     return (
       <Layout>
-        <div className="about-container">
+        <div className="container">
           <Helmet title={`Me | ${config.siteTitle}`} />
           <Me />
         </div>

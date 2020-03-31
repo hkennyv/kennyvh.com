@@ -1,8 +1,20 @@
+/* config */
 @import "base/variables";
 @import "base/mixins.scss";
+
+/* base */
+
 @import "base/reset.scss";
+
+/* layout */
 
 @import "components/layout";
 @import "components/header";
 @import "components/footer";
 @import "components/scaffolding";
+
+/* pages */
+
+@import "components/index";
+
+/* components */

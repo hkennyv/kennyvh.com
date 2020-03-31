@@ -38,7 +38,7 @@ class Listing extends React.Component {
 
     return (
       <Layout>
-        <div className="listing-container">
+        <div className="container">
           <div className="posts-container">
             <Helmet title={config.siteTitle} />
             <SEO />

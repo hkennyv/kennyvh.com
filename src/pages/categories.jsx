@@ -8,7 +8,7 @@ class CategoriesPage extends Component {
     const { children } = this.props;
     return (
       <Layout>
-        <div className="blog-container">
+        <div className="container">
           <Helmet title={`Categories | ${config.siteTitle}`} />
         </div>
       </Layout>
