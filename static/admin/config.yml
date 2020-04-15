@@ -1,10 +1,31 @@
+# NetlifyCMS configuration
+# see: https://www.netlifycms.org/docs/configuration-options/
+
 backend:
-  name: git-gateway # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
-  branch: master # Branch to update
-  repo: hkennyv/khuynh-gatsby-theme # Repo for pushing new commits. Make sure to replace with your repo!
+  # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+
+  # Branch to update
+  branch: master
+
+  # Repo for pushing new commits. Make sure this is correct!
+  repo: hkennyv/khuynh-gatsby-theme
+
+# NetlifyCMS will include a link back to the main site
+display_url: https://epic-lamport-ce50c0.netlify.com
+site_url: https://epic-lamport-ce50c0.netlify.com
+
+#
+logo_url: https://epic-lamport-ce50c0.netlify.com/
+
+# Enable draft branches
+publish_mode: editorial_workflow
 
 media_folder: static/assets
-public_folder: assets
+public_folder: /assets
 
 collections:
   - name: "blog"
