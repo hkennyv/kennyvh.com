@@ -18,8 +18,8 @@ backend:
 display_url: https://epic-lamport-ce50c0.netlify.com
 site_url: https://epic-lamport-ce50c0.netlify.com
 
-#
-logo_url: https://epic-lamport-ce50c0.netlify.com/
+# fix logo for NetlifyCMS login screen
+# logo_url: https://epic-lamport-ce50c0.netlify.com/logos/dl-khuynh.jpg
 
 # Enable draft branches
 publish_mode: editorial_workflow

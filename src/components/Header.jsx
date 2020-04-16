@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-// import floppy from '../images/floppy.png'
-// import sun from '../images/sun.svg'
-// import moon from '../images/moon.svg'
+import maleTechnologist from '../images/male-technologist.png'
+import sun from '../images/sun.svg'
+import moon from '../images/moon.svg'
 // import ThemeContext from '../context/ThemeContext'
 
 export default class Header extends Component {
@@ -38,7 +38,7 @@ export default class Header extends Component {
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
-              {/* <img src={floppy} className="favicon" alt="Floppy Diskette" /> */}
+              <img src={maleTechnologist} className="favicon" alt="Male Technologist" />
               <span className="text">Kenny Huynh</span>
             </Link>
           </div>
@@ -52,7 +52,7 @@ export default class Header extends Component {
           {/* <div className="cta">
             <button
               className="dark-switcher"
-              onClick={theme.toggleDark}
+              // onClick={theme.toggleDark}
               aria-label="Toggle Dark Mode."
               title="Toggle Dark Mode"
             >
@@ -61,6 +61,7 @@ export default class Header extends Component {
               ) : (
                 <img src={moon} className="theme-icon" alt="Dark Mode" />
               )}
+                <img src={moon} className="theme-icon" alt="Dark Mode" />
             </button>
           </div> */}
         </div>

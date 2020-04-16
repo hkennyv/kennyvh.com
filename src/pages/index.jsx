@@ -32,12 +32,12 @@ class IndexPage extends Component {
           work include:
         </p>
         <ul className="interests">
-          <li>bicycles ️🚲</li>
-          <li>cats 🐱</li>
-          <li>computers 💻</li>
-          <li>motorcycles 🏍</li>
-          <li>powerlifting 🏋️‍♀️</li>
-          <li>traveling 🧳</li>
+          <li>🚲 bicycles</li>
+          <li>🐱 cats</li>
+          <li>💻 computers</li>
+          <li>🏍 motorcycles</li>
+          <li>🏋️‍♀️ powerlifting</li>
+          <li>🧳 traveling</li>
         </ul>
       </div>
     );
