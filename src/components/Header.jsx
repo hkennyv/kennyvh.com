@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import maleTechnologist from '../images/male-technologist.png'
-import sun from '../images/sun.svg'
-import moon from '../images/moon.svg'
+// import sun from '../images/sun.svg'
+// import moon from '../images/moon.svg'
 // import ThemeContext from '../context/ThemeContext'
 
 export default class Header extends Component {
