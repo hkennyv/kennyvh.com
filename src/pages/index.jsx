@@ -12,13 +12,10 @@ class IndexPage extends Component {
       <div className="bio">
         <h1>{`Hi there! I'm Kenny. 👋`}</h1>
         <p>
-          I'm a <strong>DevOps Engineer</strong> at{"  "}
+          <strong>DevOps Engineer</strong> at{"  "}
           <a href="http://www.rejouleenergy.com/">
             <strong>ReJoule, Inc.</strong>
           </a>{" "}
-          We are an early-stage startup with an amazing team whose goal is to
-          maximize the value of every battery through advanced battery
-          diagnostics.
         </p>
         <p>
           I'm interested in solving high societal/environmental impact problems
@@ -26,19 +23,6 @@ class IndexPage extends Component {
           with technology across the entire stack (from making schematics and
           laying out PCBs to writing drivers to software interfaces and APIs).
         </p>
-        <p>
-          I'm originally from Tracy, CA and now live in{" "}
-          <strong>Garden Grove, CA</strong>. Some of my interests outside of
-          work include:
-        </p>
-        <ul className="interests">
-          <li>🚲 bicycles</li>
-          <li>🐱 cats</li>
-          <li>💻 computers</li>
-          <li>🏍 motorcycles</li>
-          <li>🏋️‍♀️ powerlifting</li>
-          <li>🧳 traveling</li>
-        </ul>
       </div>
     );
   };

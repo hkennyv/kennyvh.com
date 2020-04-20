@@ -1,7 +1,7 @@
 const config = {
-  siteTitle: "khuynh-gatsby-theme", // Site title.
+  siteTitle: "Kenny Huynh", // Site title.
   siteTitleShort: "khuynh", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Personal Gatsby Theme", // Alternative site title for SEO.
+  siteTitleAlt: "khuynh - Kenny Huynh", // Alternative site title for SEO.
   siteLogo: "/logos/dl-khuynh.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://epic-lamport-ce50c0.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.

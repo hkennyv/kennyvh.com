@@ -1,3 +1,7 @@
 .interests {
-    columns: 2;
+    columns: 1;
+
+    @include small-breakpoint {
+        columns: 2;
+    }
 }
