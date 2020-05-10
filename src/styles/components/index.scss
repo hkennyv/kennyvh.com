@@ -10,7 +10,7 @@
   }
 
   @include small-breakpoint {
-    width: 50%;
+    width: 65%;
   }
 }
 
@@ -19,7 +19,7 @@
 
   @include small-breakpoint {
     display: block;
-    max-width: 40%;
+    max-width: 35%;
     object-fit: scale-down;
   }
 }
