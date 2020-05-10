@@ -6,10 +6,12 @@ import About from "../components/About";
 import PostListing from "../components/PostListing";
 import config from "../../data/SiteConfig";
 
+import khuynh from "../images/khuynh.jpg";
+
 class IndexPage extends Component {
   renderBio = () => {
     return (
-      <div className="bio">
+      <>
         <h1>{`Hi there! I'm Kenny. 👋`}</h1>
         <p>
           <strong>DevOps Engineer</strong> at{"  "}
@@ -23,7 +25,7 @@ class IndexPage extends Component {
           with technology across the entire stack (from making schematics and
           laying out PCBs to writing drivers to software interfaces and APIs).
         </p>
-      </div>
+      </>
     );
   };
 
@@ -35,8 +37,10 @@ class IndexPage extends Component {
       <Layout>
         <Helmet title={`Kenny Huynh`} />
         <div className="container">
-          {this.renderBio()}
-
+          <div className="bioContainer">
+            <div className="bio">{this.renderBio()}</div>
+            <img className="bioImage" src={khuynh} />
+          </div>
           <section>
             <h2>Links</h2>
           </section>

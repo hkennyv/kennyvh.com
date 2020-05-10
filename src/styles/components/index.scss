@@ -1,7 +1,37 @@
-.interests {
-    columns: 1;
+.bioContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-    @include small-breakpoint {
-        columns: 2;
-    }
+.bio {
+  p {
+    font-size: 1.1rem;
+  }
+
+  @include small-breakpoint {
+    width: 50%;
+  }
+}
+
+.bioImage {
+  display: none;
+
+  @include small-breakpoint {
+    display: block;
+    max-width: 40%;
+    object-fit: scale-down;
+  }
+}
+
+.imageround {
+  border-radius: 50%;
+}
+
+.interests {
+  columns: 1;
+
+  @include small-breakpoint {
+    columns: 2;
+  }
 }
