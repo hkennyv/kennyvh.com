@@ -23,28 +23,28 @@ const config = {
     {
       label: "GitHub",
       url: "https://github.com/hkennyv/khuynh-gatsby-theme",
-      iconClassName: "fa fa-github"
+      iconClassName: "fa fa-github",
     },
     {
       label: "Twitter",
       url: "https://twitter.com/hkennyv",
-      iconClassName: "fab fa-twitter"
+      iconClassName: "fab fa-twitter",
     },
     {
       label: "Stack Overflow",
       url: "https://stackoverflow.com/users/8539533/khuynh",
-      iconClassName: "fab fa-stack-overflow"
+      iconClassName: "fab fa-stack-overflow",
     },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/hkennyv/",
-      iconClassName: "fab fa-linkedin"
+      iconClassName: "fab fa-linkedin",
     },
     {
       label: "Email",
       url: "mailto:me@kennyvh.com",
-      iconClassName: "fab fa-envelope"
-    }
+      iconClassName: "fab fa-envelope",
+    },
   ],
   menuLinks: [
     {
@@ -58,11 +58,11 @@ const config = {
     {
       name: "Contact",
       link: "/contact",
-    }
+    },
   ],
   copyright: "Copyright © 2020. khuynh", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  backgroundColor: "#e0e0e0", // Used for setting manifest background color.
 };
 
 // Validate
