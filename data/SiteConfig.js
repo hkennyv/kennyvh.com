@@ -26,16 +26,6 @@ const config = {
       iconClassName: "fa fa-github",
     },
     {
-      label: "Twitter",
-      url: "https://twitter.com/hkennyv",
-      iconClassName: "fab fa-twitter",
-    },
-    {
-      label: "Stack Overflow",
-      url: "https://stackoverflow.com/users/8539533/khuynh",
-      iconClassName: "fab fa-stack-overflow",
-    },
-    {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/hkennyv/",
       iconClassName: "fab fa-linkedin",
@@ -44,6 +34,16 @@ const config = {
       label: "Email",
       url: "mailto:me@kennyvh.com",
       iconClassName: "fab fa-envelope",
+    },
+    {
+      label: "Stack Overflow",
+      url: "https://stackoverflow.com/users/8539533/khuynh",
+      iconClassName: "fab fa-stack-overflow",
+    },
+    {
+      label: "Twitter",
+      url: "https://twitter.com/hkennyv",
+      iconClassName: "fab fa-twitter",
     },
   ],
   menuLinks: [

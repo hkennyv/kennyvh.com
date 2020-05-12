@@ -59,6 +59,9 @@ class IndexPage extends Component {
               onMouseLeave={() =>
                 this.setState({ userLinksColors: this.getColors() })
               }
+              onTouchStart={() =>
+                this.setState({ userLinksColors: this.getColors() })
+              }
               className="userLink"
             >
               {cfg.label}

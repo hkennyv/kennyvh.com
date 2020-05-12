@@ -1,10 +1,16 @@
 .bioContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+
+  @include small-breakpoint {
+    flex-direction: row;
+  }
 }
 
 .bio {
+  order: 1;
+
   p {
     font-size: 1.1rem;
   }
@@ -15,12 +21,13 @@
 }
 
 .bioImage {
-  display: none;
+  max-width: 100%;
+  object-fit: scale-down;
 
   @include small-breakpoint {
+    order: 2;
     display: block;
     max-width: 35%;
-    object-fit: scale-down;
   }
 }
 
@@ -37,13 +44,21 @@
 }
 
 .userLink {
+  padding: 5px 15px;
+  margin: 5px 0px;
+  font-size: 1rem;
+
+  @include small-breakpoint {
+    padding: 5px 20px;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+  }
+
   border: 2px solid $primary-color;
-  padding: 5px 20px;
-  margin: 10px 0px;
   border-radius: 25px;
+  min-width: 100px;
 
   color: $primary-color;
-  font-size: 1.1rem;
   text-align: center;
 
   transition: 0.2s ease all;
