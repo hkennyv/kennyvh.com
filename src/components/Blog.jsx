@@ -7,7 +7,7 @@ class Blog extends Component {
     return (
       <div className="blog">
         <h1>
-          Edit Blog component or pages/blog.jsx to include your information.
+          UNDER CONSTRUCTION :)
         </h1>
         {children}
       </div>

@@ -5,7 +5,6 @@ import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
 import Disqus from "../components/Disqus";
 import PostTags from "../components/PostTags";
-import SocialLinks from "../components/SocialLinks";
 import SEO from "../components/SEO";
 import Footer from "../components/Footer";
 import config from "../../data/SiteConfig";

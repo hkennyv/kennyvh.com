@@ -76,14 +76,16 @@ class IndexPage extends Component {
     const { data } = this.props;
     const postEdges = data.latest.edges;
 
-    return (
-      <div className="recentPosts">
-        <h2>
-          Recent Posts <Link to="/blog">View All</Link>
-        </h2>
-        <PostListing postEdges={postEdges} />
-      </div>
-    );
+    return null;
+
+    // return (
+    //   <div className="recentPosts">
+    //     <h2>
+    //       Recent Posts <Link to="/blog">View All</Link>
+    //     </h2>
+    //     <PostListing postEdges={postEdges} />
+    //   </div>
+    // );
   };
 
   /*

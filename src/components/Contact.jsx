@@ -5,7 +5,7 @@ class Contact extends Component {
     return (
       <div className="contact">
         <h1>
-          Edit Contact component or pages/Contact.jsx to include your information.
+          UNDER CONSTRUCTION :)
         </h1>
       </div>
     );
