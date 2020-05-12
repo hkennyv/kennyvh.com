@@ -35,3 +35,29 @@
     columns: 2;
   }
 }
+
+.userLink {
+  border: 2px solid $primary-color;
+  padding: 5px 20px;
+  margin: 10px 0px;
+  border-radius: 25px;
+
+  color: $primary-color;
+  font-size: 1.1rem;
+  text-align: center;
+
+  transition: 0.2s ease all;
+
+  &:hover,
+  &:active,
+  &.active {
+    color: #111;
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+
+.userLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
