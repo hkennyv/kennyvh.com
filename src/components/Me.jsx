@@ -46,13 +46,12 @@ class Me extends Component {
           <li>Ryzen 5 2600X</li>
           <li>AMD Radeon RX580</li>
           <li>16GB RAM</li>
-          <li>500GB M.2. SSD (OS)</li>
-          <li>1TB HDD</li>
+          <li>2x 500GB SSD</li>
+          <li>1x 1TB HDD</li>
         </ul>
         <h4>💻 Laptop: kmbp (MacOS Mojave)</h4>
         <ul>
           <li>Mid-2012 13" Macbook Pro Core i5</li>
-          <li>AMD Radeon RX580</li>
           <li>16GB RAM</li>
           <li>500GB SSD (OS)</li>
           <li>500GB HDD (in place of superdrive)</li>
