@@ -10,7 +10,7 @@ backend:
     - editor
 
   # Branch to update
-  branch: master
+  branch: next
 
   # Repo for pushing new commits. Make sure this is correct!
   repo: hkennyv/khuynh-gatsby-theme
