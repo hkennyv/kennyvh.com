@@ -1,0 +1,44 @@
+
+# NetlifyCMS configuration
+# see: https://www.netlifycms.org/docs/configuration-options/
+
+backend:
+    # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
+    name: git-gateway
+    accept_roles:
+      - admin
+      - editor
+  
+    # Branch to update
+    branch: master
+  
+    # Repo for pushing new commits. Make sure this is correct!
+    repo: hkennyv/khuynh-gatsby-theme
+  
+  # NetlifyCMS will include a link back to the main site
+  display_url: https://silly-rosalind-354c27.netlify.app/
+  site_url: https://silly-rosalind-354c27.netlify.app/
+  
+  # fix logo for NetlifyCMS login screen
+  # logo_url: https://epic-lamport-ce50c0.netlify.com/logos/dl-khuynh.jpg
+  
+  # Enable draft branches
+  publish_mode: editorial_workflow
+  
+  media_folder: public/images/uploads
+  public_folder: /images/uploads
+  
+  collections:
+    - name: "blog"
+      label: "Post"
+      folder: "content"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Cover Image", name: "cover", widget: "image" }
+        - { label: "Slug", name: "slug", widget: "string" }
+        - { label: "Category", name: "category", widget: "string" }
+        - { label: "Tags", name: "tags", widget: "list" }
+        - { label: "Body", name: "body", widget: "markdown" }
