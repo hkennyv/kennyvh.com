@@ -1,31 +1,30 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d4dc1f87-eabe-4c35-bd5b-71bbb6bcbcae/deploy-status)](https://app.netlify.com/sites/epic-lamport-ce50c0/deploys)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# khuynh-gatsby-theme
-author(s): khuynh
+## Getting Started
 
-## Overview
-For my current personal website, https://kennyvh.com, I wanted to take the lightest approach possible, so I simply did everything in HTML/CSS and wanted to optimize size and speed.
+First, run the development server:
 
-I also have a private blog that utilizes the [the-plain-gatsby](https://www.gatsbyjs.org/starters/wangonya/the-plain-gatsby/) theme and I have been very impressed with its performance and size. Below are the two Google Chrome Lighthouse scores for my plain html/css blog (left) and my private gastby blog (right). The performance score is really the most important one since I can always optimize better for SEO and Acessibility.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-The vanilla html/css blog is ~2.5x faster than the gatsby blog. This is unfortunate, but you have to consider all of the great features you get with the gatsby blog including (but not limited to): image optimization, integration with netlify CMS, getting to use React (i've been having a blast with this), and many more thanks to the rich gatsby ecosystem.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<p align="middle">
-    <img src="vanillablog.png" width="40%">
-    <img src="privateblog.png" width="40%">
-</p>
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-| blog         | speed index | size   |
-| ------------ | ----------- | ------ |
-| vanilla blog | 0.8s        | 24.8kB |
-| private blog | 2.1s        | 159kB  |
+## Learn More
 
-One of my other fears was that using Gatsby would inhibit people from viewing my page with javascript disabled, however that is not the case at all.
+To learn more about Next.js, take a look at the following resources:
 
-With javascript disabled, most of my styling was preserved and the page was still extremely responsive and snappy (besides the really ugly warning that this theme adds when js is disabled). This is something I'd like to keep in mind when creating my own theme.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Also, after reading Tania Rascia's [fantastic blog](https://www.taniarascia.com/migrating-from-wordpress-to-gatsby/), I've decided to take a stab at making my own gatsby theme as well.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-So here, I have a duplicated version of [gatsby-advanced-starter](https://github.com/vagr9k/gatsby-advanced-starter/) and hope to get a theme up for the next revision of my site, https://kennyvh.com.
+## Deploy on Vercel
 
-Cheers!
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
