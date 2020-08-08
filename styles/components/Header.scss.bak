@@ -10,7 +10,7 @@
   @media screen and (min-width: $medium) {
     display: block;
     visibility: visible;
-    padding-top: 4em;
+    padding-top: $top-pad;
     width: $nav-width;
   }
 }

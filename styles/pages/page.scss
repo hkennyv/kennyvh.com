@@ -1,6 +1,9 @@
 .page-container {
-  height: 100%;
-  padding: 0rem 10rem;
+  // height: 100%;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: $top-pad;
+  }
 
   h1,
   h2,

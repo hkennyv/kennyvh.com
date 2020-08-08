@@ -12,8 +12,10 @@ export default function Layout({ children, pageTitle, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <BLM />
-      <Header />
-      {children}
+      <div className="main">
+        <Header />
+        {children}
+      </div>
     </>
   );
 }
