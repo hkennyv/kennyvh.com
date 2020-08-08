@@ -45,7 +45,7 @@ export async function getStaticProps() {
       };
     });
     return data;
-  })(require.context("../posts", true, /\.md$/));
+  })(require.context("../content/posts", true, /\.md$/));
 
   return {
     props: {
