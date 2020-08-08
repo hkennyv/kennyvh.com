@@ -9,21 +9,25 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 
   return (
     <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-      <Link href="/">
-        <a>Back to post list</a>
-      </Link>
-      <article>
-        <h1>{frontmatter.title}</h1>
-        {frontmatter.date && <p>{frontmatter.date}</p>}
-        <ul className="frontmatter-tags">
-          {frontmatter.tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-        <div>
-          <ReactMarkdown source={markdownBody} />
+      <main>
+        <div className="page-container">
+          <Link href="/blog">
+            <a>Back to post list</a>
+          </Link>
+          <article>
+            <h1>{frontmatter.title}</h1>
+            {frontmatter.date && <p>{frontmatter.date}</p>}
+            <ul className="frontmatter-tags">
+              {frontmatter.tags.map((tag) => (
+                <li key={tag}>{tag}</li>
+              ))}
+            </ul>
+            <div>
+              <ReactMarkdown source={markdownBody} />
+            </div>
+          </article>
         </div>
-      </article>
+      </main>
     </Layout>
   );
 }
@@ -58,7 +62,7 @@ export async function getStaticPaths() {
       return slug;
     });
     return data;
-  })(require.context("../../content", true, /\.md$/));
+  })(require.context("../../content/posts", true, /\.md$/));
 
   const paths = blogSlugs.map((slug) => `/post/${slug}`);
 

@@ -17,6 +17,11 @@ export default function Header() {
                 <a>about</a>
               </Link>
             </li>
+            <li>
+              <Link href="/blog">
+                <a>blog</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
