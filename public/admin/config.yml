@@ -16,8 +16,8 @@ backend:
   repo: hkennyv/kennyvh.com
   
 # NetlifyCMS will include a link back to the main site
-display_url: https://silly-rosalind-354c27.netlify.app/
-site_url: https://silly-rosalind-354c27.netlify.app/
+display_url: https://kennyvh.com/
+site_url: https://kennyvh.com/
 
 # fix logo for NetlifyCMS login screen
 # logo_url: https://epic-lamport-ce50c0.netlify.com/logos/dl-khuynh.jpg
