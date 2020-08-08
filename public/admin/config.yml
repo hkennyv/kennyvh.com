@@ -13,7 +13,7 @@ backend:
   branch: master
 
   # Repo for pushing new commits. Make sure this is correct!
-  repo: hkennyv/khuynh-gatsby-theme
+  repo: hkennyv/kennyvh.com
   
 # NetlifyCMS will include a link back to the main site
 display_url: https://silly-rosalind-354c27.netlify.app/
