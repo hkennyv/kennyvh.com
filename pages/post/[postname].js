@@ -14,7 +14,12 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       </Link>
       <article>
         <h1>{frontmatter.title}</h1>
-        <p>By {frontmatter.author}</p>
+        {frontmatter.date && <p>{frontmatter.date}</p>}
+        <ul className="frontmatter-tags">
+          {frontmatter.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
         <div>
           <ReactMarkdown source={markdownBody} />
         </div>
@@ -29,6 +34,11 @@ export async function getStaticProps({ ...ctx }) {
   const content = await import(`../../content/posts/${postname}.md`);
   const config = await import(`../../siteconfig.json`);
   const data = matter(content.default);
+
+  // matter returns date strings as momentjs date objects, need to convert to
+  // string otherwise next complains
+  if (data.data.date instanceof Date)
+    data.data.date = data.data.date.toLocaleString();
 
   return {
     props: {

@@ -28,15 +28,17 @@ publish_mode: editorial_workflow
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
+# https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - name: "blog"
-    label: "Post"
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    description: "All the posts!"
     folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.md"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags (comma-delimited)", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
