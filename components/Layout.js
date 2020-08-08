@@ -10,10 +10,7 @@ export default function Layout({ children, pageTitle, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <Header />
-      <section className="layout">
-        <div className="content">{children}</div>
-      </section>
-      <footer>Built by me!</footer>
+      {children}
     </>
   );
 }

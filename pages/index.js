@@ -1,15 +1,24 @@
 import matter from "gray-matter";
 
 import Layout from "../components/Layout";
+import SocialLinks from "../components/SocialLinks";
 import PostList from "../components/PostList";
 
-const Index = ({ title, description, posts, ...props }) => {
+const Index = ({ title, description, handle, socialLinks, posts, ...props }) => {
   return (
     <Layout pageTitle={title}>
-      <h1 className="title">Welcome to my blog!</h1>
-      <p className="description">{description}</p>
       <main>
-        <PostList posts={posts} />
+        <div className="splash-container">
+          <div className="splash">
+            <h1>
+              {title}
+              <span className="fancy">.</span>
+            </h1>
+            <span className="handle">{handle}</span>
+            <h2>{description}</h2>
+            <SocialLinks socialLinks={socialLinks} />
+          </div>
+        </div>
       </main>
     </Layout>
   );
@@ -43,6 +52,8 @@ export async function getStaticProps() {
       posts,
       title: configData.default.title,
       description: configData.default.description,
+      handle: configData.default.handle,
+      socialLinks: configData.default.socialLinks,
     },
   };
 }

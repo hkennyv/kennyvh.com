@@ -48,7 +48,7 @@ export async function getStaticPaths() {
       return slug;
     });
     return data;
-  })(require.context("../../posts", true, /\.md$/));
+  })(require.context("../../content", true, /\.md$/));
 
   const paths = blogSlugs.map((slug) => `/post/${slug}`);
 

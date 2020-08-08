@@ -1,4 +1,19 @@
 {
-  "title": "My Next Blog",
-  "description": "This is a simple blog built with Next, easily deployable to Netlify!"
+  "title": "Kenny Huynh",
+  "description": "This is a simple blog built with Next, easily deployable to Netlify!",
+  "handle": "DevOps Engineer",
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/hkennyv"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/hkennyv/"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:me@kennyvh.com"
+    }
+  ]
 }

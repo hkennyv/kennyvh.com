@@ -5,12 +5,19 @@ export default function Header() {
     <>
       <header className="header">
         <nav className="nav">
-          <Link href="/">
-            <a>My Blog</a>
-          </Link>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
+          <ul className="nav__list">
+            {/* TODO: refactor this into Links based on pages in `pages` directory */}
+            <li>
+              <Link href="/">
+                <a>home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <a>about</a>
+              </Link>
+            </li>
+          </ul>
         </nav>
       </header>
     </>
