@@ -1,79 +1,49 @@
 .nav {
-  font-size: $font-size;
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  z-index: 1;
-
-  @media screen and (min-width: $medium) {
-    display: block;
-    visibility: visible;
-    padding-top: 4em;
-    width: $nav-width;
-  }
-}
-
-.nav--active .nav {
-  visibility: visible;
-  height: 100%;
   width: 100%;
+  // height: 100%;
+  font-size: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: $white;
 
-  @media screen and (min-width: $medium) {
+  @media screen and (min-width: $mobile) {
+    font-size: $font-size;
+    display: block;
+    padding-top: 4em;
+    padding-bottom: 0em;
     width: $nav-width;
   }
 }
 
 .nav__list {
-  text-align: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
 
-  @media screen and (min-width: $medium) {
-    width: auto;
+  @media screen and (min-width: $mobile) {
+    display: block;
+    text-align: right;
   }
 
-  @media screen and (max-width: $medium - 1) {
-    transform: translateY(-25px);
-    opacity: 0;
-    .nav--active & {
-      transform: translateY(0);
-      opacity: 1;
-      transition: all 500ms ease;
+  li {
+    padding: 1em 0.5em;
+
+    @media screen and (min-width: $mobile) {
+      padding: 0em;
+      margin-bottom: 1.75em;
     }
   }
-}
 
-.nav__list li {
-  margin-bottom: 3em;
-  line-height: 1.5em;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: $medium) {
-    margin-bottom: 1.75em;
-  }
-}
-
-.nav__list a {
-  color: $grey;
-  text-decoration: none;
-  font-size: 2em;
-
-  &.active {
-    color: $black;
-  }
-
-  &:hover {
-    color: $black;
-  }
-
-  @media screen and (min-width: $medium) {
+  a {
+    color: $grey;
+    text-decoration: none;
     font-size: 1em;
+
+    &:hover,
+    &.active {
+      color: $black;
+    }
   }
 }
