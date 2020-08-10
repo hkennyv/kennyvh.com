@@ -12,8 +12,16 @@
       "url": "https://www.linkedin.com/in/hkennyv/"
     },
     {
+      "label": "Stackoverflow",
+      "url": "https://stackoverflow.com/users/8539533/khuynh"
+    },
+    {
       "label": "Email",
       "url": "mailto:me@kennyvh.com"
+    },
+    {
+      "label": "CV",
+      "url": "khuynh-resume-general.pdf"
     }
   ]
 }
