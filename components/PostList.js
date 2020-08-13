@@ -27,8 +27,6 @@ export default function PostList({ posts }) {
             const dt = new Date(date);
             const [month, day, year] = dt.toLocaleDateString().split("/");
 
-            console.log(date);
-
             return (
               <li className="post" key={post.slug}>
                 <time className="postdate" dateTime={dt}>

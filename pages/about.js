@@ -2,6 +2,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+import CodeBlock from "../components/CodeBlock";
 
 const About = ({ title, frontmatter, markdownBody, ...props }) => {
   return (
@@ -9,7 +10,10 @@ const About = ({ title, frontmatter, markdownBody, ...props }) => {
       <Layout pageTitle={`${title} | About`}>
         <main>
           <div className="page-container">
-            <ReactMarkdown source={markdownBody} />
+            <ReactMarkdown
+              source={markdownBody}
+              renderers={{ code: CodeBlock }}
+            />
           </div>
         </main>
       </Layout>
