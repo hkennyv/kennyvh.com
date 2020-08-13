@@ -10,7 +10,6 @@ const Blog = ({ title, posts, ...props }) => {
       <Layout pageTitle={`${title} | Blog`}>
         <main>
           <div className="page-container">
-            <h2>Posts</h2>
             <PostList posts={posts} />
           </div>
         </main>

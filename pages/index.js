@@ -19,6 +19,7 @@ const Index = ({ title, description, handle, socialLinks, ...props }) => {
             <SocialLinks socialLinks={socialLinks} />
           </div>
         </div>
+        {/* can make more content accessible by scrolling down here! :) */}
       </main>
     </Layout>
   );
