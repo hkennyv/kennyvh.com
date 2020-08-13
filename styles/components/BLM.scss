@@ -13,11 +13,12 @@
   white-space: pre;
 
   width: 100%;
-  height: 40px;
+  height: $blm-height;
 
   @media screen and (min-width: $mobile) {
-    position: absolute;
+    position: fixed;
     font-size: $font-size;
+    margin-top: -$top-pad;
   }
 }
 

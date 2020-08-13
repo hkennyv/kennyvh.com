@@ -11,7 +11,6 @@ export default function Layout({ children, pageTitle, ...props }) {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>{pageTitle}</title>
       </Head>
-      <BLM />
       <div className="main">
         <Header />
         {children}

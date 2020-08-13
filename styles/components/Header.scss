@@ -1,20 +1,26 @@
 .nav {
-  // position: fixed;
+  position: fixed;
   width: 100%;
   font-size: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  background: $white;
+  background-color: $white;
+
+  &.scrolled {
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+  }
 
   @media screen and (min-width: $mobile) {
     height: 100%;
     font-size: $font-size;
+    background-color: transparent;
     display: block;
-    margin-right: 1em;
     padding-top: $top-pad;
     padding-bottom: 0em;
     width: $nav-width;
     min-width: $nav-width;
+
+    &.scrolled {
+      box-shadow: none;
+    }
   }
 }
 
@@ -23,6 +29,7 @@
   justify-content: space-evenly;
   list-style-type: none;
   align-items: center;
+  height: $nav-height;
 
   @media screen and (min-width: $mobile) {
     display: block;
