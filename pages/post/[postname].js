@@ -4,28 +4,41 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "../../components/Layout";
 
+import { CodeBlockRenderer, HeadingRenderer } from "../../utils/renderers";
+import { formatFrontmatterDate } from "../../utils/helpers";
+
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
+  const { date, tags, title } = frontmatter;
+  const dt = new Date(date);
+  const dtString = formatFrontmatterDate(dt);
+
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+    <Layout pageTitle={`${siteTitle} | ${title}`}>
       <main>
         <div className="page-container">
-          <Link href="/blog">
-            <a>Back to post list</a>
-          </Link>
-          <article>
-            <h1>{frontmatter.title}</h1>
-            {frontmatter.date && <p>{frontmatter.date}</p>}
-            <ul className="frontmatter-tags">
-              {frontmatter.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-            <div>
-              <ReactMarkdown source={markdownBody} />
+          <header className="post-header">
+            <h1 className="post-title">{title}</h1>
+            {frontmatter.date && (
+              <time className="post-date" dateTime={dt}>
+                {dtString}
+              </time>
+            )}
+          </header>
+          <article className="post-content">
+            <div className="markdown-body">
+              <ReactMarkdown
+                escapeHtml={false}
+                source={markdownBody}
+                renderers={{
+                  code: CodeBlockRenderer,
+                  heading: HeadingRenderer,
+                }}
+              />
             </div>
           </article>
+          <footer></footer>
         </div>
       </main>
     </Layout>

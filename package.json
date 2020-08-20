@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "github-markdown-css": "^4.0.0",
     "gray-matter": "^4.0.2",
     "next": "9.5.1",
     "raw-loader": "^4.0.1",

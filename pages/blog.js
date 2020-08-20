@@ -1,5 +1,4 @@
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";

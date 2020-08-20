@@ -1,19 +1,5 @@
 import Link from "next/link";
-
-const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+import { formatFrontmatterDate } from "../utils/helpers";
 
 export default function PostList({ posts }) {
   return (
@@ -25,21 +11,21 @@ export default function PostList({ posts }) {
             const { slug } = post;
             const { date, tags, title } = post.frontmatter;
             const dt = new Date(date);
-            const [month, day, year] = dt.toLocaleDateString().split("/");
+            const dtString = formatFrontmatterDate(dt);
 
             return (
-              <li className="post" key={post.slug}>
-                <time className="postdate" dateTime={dt}>
-                  {`${monthNames[month]}, ${day} ${year}`}
+              <li className="postlist-post" key={post.slug}>
+                <time className="postlist-date" dateTime={dt}>
+                  {dtString}
                 </time>
-                <h2 className="posttitle">
+                <h2 className="postlist-title">
                   <Link href={{ pathname: `/post/${slug}` }}>
-                    <a className="postlink">{title}</a>
+                    <a className="postlist-link">{title}</a>
                   </Link>
                 </h2>
-                <ul className="taglist">
+                <ul className="postlist-taglist">
                   {tags.map((tag) => (
-                    <li className="posttag" key={tag}>{`#${tag}`}</li>
+                    <li className="postlist-tag" key={tag}>{`#${tag}`}</li>
                   ))}
                 </ul>
               </li>

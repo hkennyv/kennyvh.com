@@ -2,7 +2,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
-import CodeBlock from "../components/CodeBlock";
+import { CodeBlockRenderer, HeadingRenderer } from "../utils/renderers";
 
 const About = ({ title, frontmatter, markdownBody, ...props }) => {
   return (
@@ -11,8 +11,12 @@ const About = ({ title, frontmatter, markdownBody, ...props }) => {
         <main>
           <div className="page-container">
             <ReactMarkdown
+              escapeHtml={false}
               source={markdownBody}
-              renderers={{ code: CodeBlock }}
+              renderers={{
+                code: CodeBlockRenderer,
+                heading: HeadingRenderer,
+              }}
             />
           </div>
         </main>
