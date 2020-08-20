@@ -10,14 +10,16 @@ const About = ({ title, frontmatter, markdownBody, ...props }) => {
       <Layout pageTitle={`${title} | About`}>
         <main>
           <div className="page-container">
-            <ReactMarkdown
-              escapeHtml={false}
-              source={markdownBody}
-              renderers={{
-                code: CodeBlockRenderer,
-                heading: HeadingRenderer,
-              }}
-            />
+            <div className="markdown-body">
+              <ReactMarkdown
+                escapeHtml={false}
+                source={markdownBody}
+                renderers={{
+                  code: CodeBlockRenderer,
+                  heading: HeadingRenderer,
+                }}
+              />
+            </div>
           </div>
         </main>
       </Layout>
