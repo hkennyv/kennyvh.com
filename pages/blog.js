@@ -43,13 +43,17 @@ export async function getStaticProps() {
       };
     });
     return data;
-
   })(require.context("../content/posts", true, /\.md$/));
 
   return {
     props: {
       title: configData.default.title,
-      posts,
+      // sort posts based on date created
+      posts: posts.sort((left, right) =>
+        new Date(left.frontmatter.date) > new Date(right.frontmatter.date)
+          ? -1
+          : 1
+      ),
     },
   };
 }
