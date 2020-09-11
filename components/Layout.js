@@ -13,6 +13,10 @@ export default function Layout({ children, pageTitle, ...props }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kennyvh.com/" />
         <meta
+          property="og:description"
+          content="Welcome to my little corner of the internet!"
+        />
+        <meta
           property="og:image"
           content="https://pbs.twimg.com/profile_banners/603264551/1431934867/1500x500"
         />
