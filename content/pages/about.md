@@ -1,22 +1,45 @@
 ---
-title: "About"
-date: "2019-01-25"
-author: "Radek"
+title: My First Blog Post
+date: 2020-08-06
+slug: My first blog post
+tags:
+  - life
 ---
 
-# Hi there
+# About me
 
-My name is Radek and I'm the author of this theme. I made it to help you present your ideas easier.
+My name is Kenny Huynh, I work at ReJoule, Inc. as a DevOps Engineer.
+I love my cat, riding bicycles, and driving motorcycles!
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+```c
+#include <stdio.h>
 
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
+int main(void) {
+    printf("HELLO, WORLD!\n");
+    return 0;
+}
+```
 
-The theme includes:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </body>
+</html>
+```
 
-- **5 duotone themes**, depending on your preferences (orange, red, blue, green, pink)
-- [**Fira Code**](https://github.com/tonsky/FiraCode) as default monospaced font. It's gorgeous!
-- **really nice, custom duotone** syntax highlighting based on [**PrismJS**](https://prismjs.com)
-- mobile friendly layout
+```rust
+pub fn main() {
+  println!("HELLO WORLD!!");
 
-So, there you have it... enjoy!
+  Ok()
+}
+```
