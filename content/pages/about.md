@@ -1,45 +1,36 @@
 ---
-title: My First Blog Post
-date: 2020-08-06
-slug: My first blog post
+title: me
+date: "2020-10-12"
+author: hkennyv
+cover: /images/uploads/dl.jpg
 tags:
-  - life
+  - me
 ---
 
 # About me
 
-My name is Kenny Huynh, I work at ReJoule, Inc. as a DevOps Engineer.
-I love my cat, riding bicycles, and driving motorcycles!
+My name is Kenny Huynh, I work at
+[**ReJoule, Inc.**](https://rejouleenergy.com/)
+as a DevOps Engineer. I have a background in electrical engineering, embedded
+systems, and software engineering. I love tinkering with new technologies
+(both hardware and software) and I love thinking about all the ways that we
+can apply these technologies to create a better world.
 
-```c
-#include <stdio.h>
+I'm a first gen Vietnamese-American and I'm originally from a small town called
+Tracy, CA but currently reside in sunny Southern California (Garden Grove).
 
-int main(void) {
-    printf("HELLO, WORLD!\n");
-    return 0;
-}
-```
+When I'm not working, you can find me:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </body>
-</html>
-```
+🏔 - hiking and camping
 
-```rust
-pub fn main() {
-  println!("HELLO WORLD!!");
+🚲 - riding my bicycle or motorcycle
 
-  Ok()
-}
-```
+🏋️‍♀️ - working out
+
+👾 - playing video games
+
+💻 - contributing to open-source software
+
+🍞 - loafing around with my cat
+
+Currently: dabbing in rust 🦀
