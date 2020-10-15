@@ -14,10 +14,10 @@ least...).
 
 I haven't decided yet if I want this to be a strictly technical blog or if I
 want to do some personal blogging on it as well. I'm learning towards the latter
-where I just dump a bunch of crap here. 
+where I just dump a bunch of crap here.
 
 I think i've changed my website at least 4-5x in the past year, so it's always
-going to be a WIP. 
+going to be a WIP.
 
 That being said, it's a great excuse for me to play around with new
 technologies. I've really been enjoying the serverless stuff lately.
