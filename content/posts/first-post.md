@@ -2,6 +2,7 @@
 title: A blog post?!
 date: "2020-10-12"
 author: hkennyv
+cover: /images/uploads/dl.jpg
 tags:
   - web
 ---
