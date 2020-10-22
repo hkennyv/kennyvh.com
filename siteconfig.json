@@ -1,7 +1,7 @@
 {
-  "title": "Terminal",
-  "subtitle": "A simple, retro theme for NextJS.",
-  "keywords": ["nextjs", "theme", "retro"],
+  "title": "kennyvh",
+  "subtitle": "kenny huynh",
+  "keywords": ["nextjs", "theme", "retro", "terminal", "kennyvh", "khuynh"],
   "copyright": "",
   "homepage": "https://github.com/hkennyv/next-theme-terminal",
   "params": {
@@ -19,16 +19,6 @@
       "identifier": "about",
       "name": "About",
       "url": "/about"
-    },
-    {
-      "identifier": "showcase",
-      "name": "Showcase",
-      "url": "/showcase"
-    },
-    {
-      "identifier": "extra",
-      "name": "Extra",
-      "url": "/extra"
     }
   ]
 }
