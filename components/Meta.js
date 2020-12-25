@@ -18,14 +18,14 @@ export default function Meta({ authorTwitter, description, keywords, params }) {
           <link> tags in this component. I suspect that it's related to not
           being directly rendered under <Head>?
        */}
-      <link
+      {/* <link
         rel="shortcut icon"
         href={
           params.favicon
             ? `/${params.favicon}`
             : `/favicon/${params.themeColor}.png`
         }
-      />
+      /> */}
       {/* Twitter Card */}
       {authorTwitter && (
         <>

@@ -6,19 +6,29 @@
   "homepage": "https://github.com/hkennyv/next-theme-terminal",
   "params": {
     "themeColor": "green",
-    "showMenuItems": 2,
+    "showMenuItems": 3,
     "fullWidthTheme": false,
     "centerTheme": false
   },
   "logo": {
-    "logoText": "Terminal",
+    "logoText": "me@kennyvh",
     "logoHomeLink": "/"
   },
   "menu": [
     {
       "identifier": "about",
-      "name": "About",
+      "name": "/about",
       "url": "/about"
+    },
+    {
+      "identifier": "blog",
+      "name": "/blog",
+      "url": "/posts"
+    },
+    {
+      "identifier": "contact",
+      "name": "/contact",
+      "url": "/contact"
     }
   ]
 }
