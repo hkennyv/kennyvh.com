@@ -17,6 +17,8 @@ some changes that aren't present in the [upstream](https://github.com/hkennyv/ne
 like a CMS or changes to certain routes' index pages. However, the majority of
 the theme remains the same as the upstream.
 
+The live site can be viewed here: <https://kennyvh.com>
+
 ## Usage
 
 To get started, you'll need:
