@@ -1,5 +1,5 @@
 ---
-title: Time for a new laptop?
+title: Upgrading my laptop
 date: "2020-12-24"
 author: kenny huynh
 tags:
