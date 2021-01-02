@@ -23,7 +23,7 @@ export default function Index({ config, posts }) {
           I also love going for a ride on my bicycle or motorcycle and I'm a
           (very) new aspiring bedroom DJ.
         </p>
-        <p>
+        <div>
           Feel free to:
           <ul>
             <li>
@@ -36,7 +36,7 @@ export default function Index({ config, posts }) {
               <Link href="/contact">contact me or connect on socials</Link>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
     </Layout>
   );
