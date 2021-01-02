@@ -24,8 +24,7 @@ Sadly, after years of use, some parts of the laptop were wearing and its
 internals were starting to show their age. I started to keep an eye out for a
 new laptop, some things that I was particularly interested in were:
 
-- USB-C - an absolute must for me. I have two [Lenovo P27h-10 27" monitors]
-  (lenovo.com/us/en/accessories-and-monitors/monitors/professional/P27h-10A16270QP127inch-Monitor-HDMI/p/61AFGAR1US)
+- USB-C - an absolute must for me. I have two [Lenovo P27h-10 27" monitors](lenovo.com/us/en/accessories-and-monitors/monitors/professional/P27h-10A16270QP127inch-Monitor-HDMI/p/61AFGAR1US)
   at home and I would _love_ to utilize the unified displayport/usb-c pd
   feature. Plus, less cables is always a win for me.
 - Higher resolution screen - the Mid-2012 MBP 13" is rocking a 1280x800

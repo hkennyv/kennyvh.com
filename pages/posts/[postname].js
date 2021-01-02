@@ -1,6 +1,7 @@
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
 import { getMarkdownSlugs, parseMarkdownFiles } from "@utils/utils";
 
@@ -17,7 +18,7 @@ export default function Post({ config, post, nextPost, prevPost }) {
     >
       <div className="post">
         <Frontmatter post={post} root={"/posts"} />
-        <ReactMarkdown source={markdownBody} />
+        <ReactMarkdown plugins={[gfm]} source={markdownBody} />
       </div>
       {/* pagination */}
       <div className="pagination">
@@ -25,7 +26,7 @@ export default function Post({ config, post, nextPost, prevPost }) {
           <span className="pagination__title-h">Read other posts</span>
           <hr />
         </div>
-        <div class="pagination__buttons">
+        <div className="pagination__buttons">
           {prevPost && (
             <span className="button previous">
               <Link href={`/posts/${prevPost.slug}`}>
@@ -67,7 +68,7 @@ export async function getStaticProps({ ...context }) {
   const nextPost = postIndex + 1 < posts.length ? posts[postIndex + 1] : null;
   const prevPost = postIndex - 1 >= 0 ? posts[postIndex - 1] : null;
 
-  console.log(post.slug, nextPost?.slug, prevPost?.slug);
+  // console.log(post.slug, nextPost?.slug, prevPost?.slug);
 
   return {
     props: {
