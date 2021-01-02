@@ -2,6 +2,7 @@
 title: About
 date: "2020-12-24"
 author: kenny huynh
+cover: /images/uploads/dl.jpg
 tags:
   - me
 ---

@@ -1,8 +1,7 @@
 ---
-title: A blog post?!
+title: Obligatory first post
 date: "2020-10-12"
-author: hkennyv
-cover: /images/uploads/dl.jpg
+author: kenny huynh
 tags:
   - web
 ---
