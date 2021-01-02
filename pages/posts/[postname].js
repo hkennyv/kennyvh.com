@@ -31,8 +31,8 @@ export default function Post({ config, post, nextPost, prevPost }) {
             <span className="button previous">
               <Link href={`/posts/${prevPost.slug}`}>
                 <a>
-                  <span class="button__icon">←</span>
-                  <span class="button__text">{prevPost.slug}</span>
+                  <span className="button__icon">←</span>
+                  <span className="button__text">{prevPost.slug}</span>
                 </a>
               </Link>
             </span>
@@ -41,8 +41,8 @@ export default function Post({ config, post, nextPost, prevPost }) {
             <span className="button next">
               <Link href={`/posts/${nextPost.slug}`}>
                 <a>
-                  <span class="button__text">{nextPost.slug}</span>
-                  <span class="button__icon">→</span>
+                  <span className="button__text">{nextPost.slug}</span>
+                  <span className="button__icon">→</span>
                 </a>
               </Link>
             </span>

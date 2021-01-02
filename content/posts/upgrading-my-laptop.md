@@ -66,16 +66,16 @@ of my friends, thanks SM!).
 
 #### Comparison
 
-Here's a table comparing the specs and costs between the two machines and my old one!:
+Here's a table comparing the specs and costs between the two machines:
 
-|               | 2020 Intel MBP 13"                                                 | 2020 M1 MBA 13"                       | Mid-2012 Intel MBP 13"                  |
-| ------------- | ------------------------------------------------------------------ | ------------------------------------- | --------------------------------------- |
-| **Processor** | 10th gen Intel Core i5 (4c)                                        | Apple M1 CPU (8c)                     | 2nd gen Intel Core i5 (2c)              |
-| **Graphics**  | Intel Iris Plus integrated graphics                                | Apple M1 SOC 8-Core GPU               | Intel HD 4000 integrated                |
-| **Storage**   | 512GB SSD                                                          | 512GB SSD                             | 512GB SSD + 512GB HDD                   |
-| **RAM**       | 16GB 3733MHz LPDDR4X                                               | 16GB Unified Memory                   | 16GB DDR3                               |
-| **I/O**       | 4 Thunderbolt ports                                                | 2 Thunderbolt / USB 4 ports           | USB-A, ethernet, SD reader, thunderbolt |
-| **Price\***   | **\$1799.00** (although I purchased an open-box one for \$1349.00) | **\$1449.00** (\$1091.00 w/ discount) | **\$300** (+ ~\$200 upgrades)           |
+|               | 2020 Intel MBP 13"                                                 | 2020 M1 MBA 13"                       |
+| ------------- | ------------------------------------------------------------------ | ------------------------------------- |
+| **Processor** | 10th gen Intel Core i5 (4c)                                        | Apple M1 CPU (8c)                     |
+| **Graphics**  | Intel Iris Plus integrated graphics                                | Apple M1 SOC 8-Core GPU               |
+| **Storage**   | 512GB SSD                                                          | 512GB SSD                             |
+| **RAM**       | 16GB 3733MHz LPDDR4X                                               | 16GB Unified Memory                   |
+| **I/O**       | 4 Thunderbolt ports                                                | 2 Thunderbolt / USB 4 ports           |
+| **Price\***   | **\$1799.00** (although I purchased an open-box one for \$1349.00) | **\$1449.00** (\$1091.00 w/ discount) |
 
 \* before tax prices
 
