@@ -28,7 +28,7 @@ media_folder: public/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: "Blog Posts"
+  - name: "posts"
     label: "Post"
     folder: "content/posts"
     create: true
