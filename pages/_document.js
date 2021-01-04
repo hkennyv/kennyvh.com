@@ -9,7 +9,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        </Head>
         <body className="orange">
           <Main />
           <NextScript />
