@@ -1,3 +1,7 @@
+# ignore content markdown posts since sometimes they're created via netlify
+# CMS and won't be formatted properly
+content/
+
 # ignore assets from original theme so we have easy diffing
 # also ignore prism.js since it is from the prismjs website
 assets/
