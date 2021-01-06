@@ -8,5 +8,16 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      // added snippet
+      console.log("registering prePublish event listener...");
+      CMS.registerEventListener({
+        name: "prePublish", // or preSave
+        handler: ({ entry }) => {
+          console.log("Hello! From prePublish event listener");
+          console.log(entry);
+        },
+      });
+    </script>
   </body>
 </html>
