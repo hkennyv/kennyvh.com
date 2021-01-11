@@ -9,7 +9,7 @@ backend:
     - editor
 
   # Branch to update
-  branch: master
+  branch: main
 
   # Repo for pushing new commits. Make sure this is correct!
   repo: hkennyv/kennyvh.com
