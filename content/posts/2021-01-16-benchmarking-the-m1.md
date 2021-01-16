@@ -56,5 +56,13 @@ The javascript/node.js environment and toolchain installed without any issues th
 Lastly, I do mostly data engineering stuff in Python, so the numpy/pandas/scipy stack is important to me. Python itself installed without an issue but problems arise when trying to install some of the scientific packages such as numpy and tensorflow. Since these heavily rely on clibs such as openblas, it took a lot of work to get these to install properly. It's still annoying to do since I make heavy use of virtualenvs, I have to build numpy from source and manually set the `OPENBLAS`env var to point to my installation each time and even then pandas and matplotlib have some issues working with it. I haven't even tried to do any deep learning stuff since I expect even more dependency issues with it. So, unfortunately, I would not recommend someone who uses the scientific python stack heavily to snag an M1 just yet. There are some key issues, however, that you can probably track to see when these issue are resolved: [numpy#18160](https://github.com/numpy/numpy/issues/18160), [numpy#17807](https://github.com/numpy/numpy/issues/17807).
 
 
+## Benchmarks
+
+That being said, let's see some numbers. I'll be comparing 3 machines:
+
+- 2020 M1 Macbook Air 13" 16GB
+- mid-2012 Macbook Pro 13" i5 16GB
+- Ryzen 2600X, RX580, 24GB (hackintosh + windows)
+
 
 
