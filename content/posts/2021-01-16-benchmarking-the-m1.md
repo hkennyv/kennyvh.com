@@ -64,5 +64,14 @@ That being said, let's see some numbers. I'll be comparing 3 machines:
 - mid-2012 Macbook Pro 13" i5 16GB
 - Ryzen 2600X, RX580, 24GB (hackintosh + windows)
 
+The benchmarks I'll be running are designed to be more-or-less things that I would _actually_ do. So, with that being said, the benchmarks will be:
 
+- compiling sqlite (single-thread and multi-threaded)
+- running one of my crappy advent of code (AOC) rust programs
+- TFT FPS
 
+### Compiling sqlite benchmark
+
+### Rust AOC benchmark
+
+### TFT benchmark
