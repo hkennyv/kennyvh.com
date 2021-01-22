@@ -7,7 +7,7 @@ tags:
   - apple
   - review
 ---
-In my last post, I talked about [upgrading my laptop](https://www.kennyvh.com/posts/upgrading-my-laptop). I'm about a month in and, so far, I'm extremely satisfied with it and would recommend it to _most_ people.
+In my last post, I talked about [upgrading my laptop](https://www.kennyvh.com/posts/upgrading-my-laptop). I'm about a month in and, so far, I'm extremely satisfied with it and would recommend it to *most* people.
 
 I used the qualifier "most", because although this machine has worked delightfully for me, there are a few things that could make it less than ideal for some use-cases that I won't fully go into detail here.
 
@@ -15,19 +15,19 @@ I used the qualifier "most", because although this machine has worked delightful
 
 I'll be focusing on my use-case in this post, so what do I actually use my laptop for?
 
-- web browsing
-- checking emails
-- discord
-- recently, [TFT](https://teamfighttactics.leagueoflegends.com/)
-- dj'ing
-- blogging
-- development & programming
+* web browsing
+* checking emails
+* discord
+* recently, [TFT](https://teamfighttactics.leagueoflegends.com/)
+* dj'ing
+* blogging
+* development & programming
 
-Well, most of these things work out of the box. Some of these things work _to some extent_. Luckily for me, none of them don't work at all (although the process to get them set up is less than ideal for many people).
+Well, most of these things work out of the box. Some of these things work *to some extent*. Luckily for me, none of them don't work at all (although the process to get them set up is less than ideal for many people).
 
 ### Surfing the web
 
-Web browsing for the most part, is _extremely_ fast. My M1 MBA scores a higher [browser bench](https://browserbench.org/) than my desktop (which I will show in the benchmark section below). In fact, due to the M1 using the ARM architecture, there seems to be an instruction in the ARM ISA that [accelerates javascript](https://news.ycombinator.com/item?id=25233554). This is really great actually since a lot of tools these days offer an SPA version in the browser (not saying this is great, but this is the way things seem to be moving). MS office offers both a web version as well as an ARM native version, so no qualms there either.
+Web browsing for the most part, is *extremely* fast. My M1 MBA scores a higher [browser bench](https://browserbench.org/) than my desktop (which I will show in the benchmark section below). In fact, due to the M1 using the ARM architecture, there seems to be an instruction in the ARM ISA that [accelerates javascript](https://news.ycombinator.com/item?id=25233554). This is really great actually since a lot of tools these days offer an SPA version in the browser (not saying this is great, but this is the way things seem to be moving). MS office offers both a web version as well as an ARM native version, so no qualms there either.
 
 ### Gaming
 
@@ -55,23 +55,39 @@ The javascript/node.js environment and toolchain installed without any issues th
 
 Lastly, I do mostly data engineering stuff in Python, so the numpy/pandas/scipy stack is important to me. Python itself installed without an issue but problems arise when trying to install some of the scientific packages such as numpy and tensorflow. Since these heavily rely on clibs such as openblas, it took a lot of work to get these to install properly. It's still annoying to do since I make heavy use of virtualenvs, I have to build numpy from source and manually set the `OPENBLAS`env var to point to my installation each time and even then pandas and matplotlib have some issues working with it. I haven't even tried to do any deep learning stuff since I expect even more dependency issues with it. So, unfortunately, I would not recommend someone who uses the scientific python stack heavily to snag an M1 just yet. There are some key issues, however, that you can probably track to see when these issue are resolved: [numpy#18160](https://github.com/numpy/numpy/issues/18160), [numpy#17807](https://github.com/numpy/numpy/issues/17807).
 
-
 ## Benchmarks
 
 That being said, let's see some numbers. I'll be comparing 3 machines:
 
-- 2020 M1 Macbook Air 13" 16GB
-- mid-2012 Macbook Pro 13" i5 16GB
-- Ryzen 2600X, RX580, 24GB (hackintosh + windows)
+* 2020 M1 Macbook Air 13" 16GB
+* mid-2012 Macbook Pro 13" i5 16GB
+* Ryzen 2600X, RX580, 24GB (hackintosh + windows)
 
-The benchmarks I'll be running are designed to be more-or-less things that I would _actually_ do. So, with that being said, the benchmarks will be:
+The benchmarks I'll be running are designed to be more-or-less things that I would *actually* do. So, with that being said, the benchmarks will be:
 
-- compiling sqlite (single-thread and multi-threaded)
-- running one of my crappy advent of code (AOC) rust programs
-- TFT FPS
+* cinebench r23 (single core and multi core)
+* compiling sqlite (single-job and multi-job)
+* running one of my crappy advent of code (AOC) rust programs
+* TFT FPS
+
+In addition, I'm publishing all of my benchmarking data in a [gist](https://gist.github.com/hkennyv/0f041cb93552d74a5a546ceb585e1bc7). You can also view the analysis for this [here]().
+
+### Cinebench R23 benchmark
+
+![benchmark-cinebench-sc](/images/uploads/benchmarks-cinebench-sc.png "cinebench single core benchmark")
+
+![benchmark-cinebench-mc](/images/uploads/benchmarks-cinebench-mc.png "cinebench multi core benchmark")
 
 ### Compiling sqlite benchmark
 
+![benchmark-sqlite1](/images/uploads/benchmarks-sqlite-1.png "sqlite single-job benchmark")
+
+![benchmark-sqlite2](/images/uploads/benchmarks-cinebench-mc.png "sqlite multi-job benchmark")
+
 ### Rust AOC benchmark
 
+`TODO`
+
 ### TFT benchmark
+
+`TODO`
