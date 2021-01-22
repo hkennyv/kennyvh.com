@@ -70,7 +70,7 @@ The benchmarks I'll be running are designed to be more-or-less things that I wou
 * running one of my crappy advent of code (AOC) rust programs
 * TFT FPS
 
-In addition, I'm publishing all of my benchmarking data in a [gist](https://gist.github.com/hkennyv/0f041cb93552d74a5a546ceb585e1bc7). You can also view the analysis for this [here]().
+In addition, I'm publishing all of my benchmarking data in a [gist](https://gist.github.com/hkennyv/0f041cb93552d74a5a546ceb585e1bc7). You can also view the analysis for this [here](https://github.com/hkennyv/kennyvh.com/blob/main/content/notebooks/benchmarking-the-m1.ipynb).
 
 ### Cinebench R23 benchmark
 
