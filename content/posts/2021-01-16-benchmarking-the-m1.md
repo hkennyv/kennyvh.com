@@ -82,7 +82,7 @@ In addition, I'm publishing all of my benchmarking data in a [gist](https://gist
 
 ![benchmark-sqlite1](/images/uploads/benchmarks-sqlite-1.png "sqlite single-job benchmark")
 
-![benchmark-sqlite2](/images/uploads/benchmarks-cinebench-mc.png "sqlite multi-job benchmark")
+![benchmark-sqlite2](/images/uploads/benchmarks-sqlite-2.png "sqlite multi-job benchmark")
 
 ### Rust AOC benchmark
 
