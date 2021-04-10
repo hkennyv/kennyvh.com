@@ -6,7 +6,7 @@ import PostList from "@components/PostList";
 
 export default function Index({ config, posts }) {
   return (
-    <Layout pageTitle={config.name} config={config}>
+    <Layout pageTitle={config.title} config={config}>
       <div className="index-content framed">
         <h1 id="hello-there">Hello there! 👋</h1>
         <p>
