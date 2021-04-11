@@ -12,10 +12,9 @@ The web is home to millions of websites. According to [internetlivestats](https:
 
 ![total-number-websites](/images/uploads/total-number-websites.png)
 
-<details>
- <summary>View code to generate plot from internetlivestats</summary>
- <p>plot.py</p>
- <code>
+I wrote a short python script to scrape the internetlivestats and plot the data below:
+
+````python
 # %% [markdown]
 # this script reads the total number of websites from
 # https://www.internetlivestats.com/total-number-of-websites/
@@ -70,8 +69,7 @@ plt.tight_layout()
 plt.savefig("total-number-of-websites.png")
 
 # %%
- </code>
-</details>
+````
 
 The thing that I love the most about the internet is how it allows people to share and publish information that is accessible to anyone in the world with an internet connection. Having a personal website is like having your own little corner of the internet to share with whomever you wish.
 
@@ -81,9 +79,9 @@ However, most people I know can count the number of websites they visit daily on
 
 I made <https://www.kennyvh.com/> for a few reasons:
 
-- to carve out my own personal corner of the internet
-- to experiment and play around on the web
-- to practice reflecting and writing
+* to carve out my own personal corner of the internet
+* to experiment and play around on the web
+* to practice reflecting and writing
 
 So far, it has been a blast to do so. I've probably rewritten my site like 3-4x by now and I've learned a lot and had fun each time. Highly recommend.
 
@@ -95,7 +93,7 @@ There were a few requirements I had in mind when building my site:
 
 #### Technology is fun
 
-I wanted to use fun technology to build my site (who doesn't like fun stuff?). There are a _ton_ of awesome things going on in the web world that I'm super excited about. React is awesome and Next.JS is seriously the piece that the React ecosystem was missing IMO. The tooling and developer experience (DX) is unmatched. This is such a refreshing breath of fresh air coming from the embedded world where the DX is basically non-existent and the ecosystem is dominated by sh*tty vendor-specific tools.
+I wanted to use fun technology to build my site (who doesn't like fun stuff?). There are a *ton* of awesome things going on in the web world that I'm super excited about. React is awesome and Next.JS is seriously the piece that the React ecosystem was missing IMO. The tooling and developer experience (DX) is unmatched. This is such a refreshing breath of fresh air coming from the embedded world where the DX is basically non-existent and the ecosystem is dominated by sh*tty vendor-specific tools.
 
 I'm particularly excited to be using NextJS since it seems like they're pioneering some awesome things such as [React server components](https://vercel.com/blog/everything-about-react-server-components). IMO Gatsby was awesome as well, however I felt like using GraphQL for shuffling data around was a little hacky and unintuitive.
 
@@ -103,7 +101,7 @@ I'm particularly excited to be using NextJS since it seems like they're pioneeri
 
 I initially went with full vanilla HTML, CSS, & Javascript because I wanted the site to be fast, responsive on mobile, lightweight, and I wanted my site to work without JS. I was vehemently against these "fad" frameworks.
 
-However, after giving Gatsby a try, I was amazed by the DX. I was able to get a site up and running in <10 minutes just by following their docs, that's how great and easy it was. I quickly found that modern front-end tooling enables you to do so much with so little effort. You get static site generation, lazy loading images, routing, etc. for almost _free_. I scored pretty much the same in the [Google lighthouse score](https://github.com/hkennyv/kennyvh.com/tree/gatsby-stop) using Gatsby as I did with vanilla HTML, CSS, and JS. Amazing.
+However, after giving Gatsby a try, I was amazed by the DX. I was able to get a site up and running in <10 minutes just by following their docs, that's how great and easy it was. I quickly found that modern front-end tooling enables you to do so much with so little effort. You get static site generation, lazy loading images, routing, etc. for almost *free*. I scored pretty much the same in the [Google lighthouse score](https://github.com/hkennyv/kennyvh.com/tree/gatsby-stop) using Gatsby as I did with vanilla HTML, CSS, and JS. Amazing.
 
 #### Needs to be low maintenance
 
