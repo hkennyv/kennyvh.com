@@ -87,6 +87,31 @@ yarn start
 
 For more details on deployment, see the [Next.js docs](https://nextjs.org/docs/deployment).
 
+### Keeping up to date with the theme
+
+This site theme is inspired by [panr/hugo-theme-terminal](https://github.com/panr/hugo-theme-terminal).
+I ported this theme (with permission, of course) to a React/Next.JS theme,
+[hkennyv/next-theme-terminal](https://github.com/hkennyv/next-theme-terminal).
+
+I try my best to keep the NextJS theme in sync with the hugo theme, so the
+recommended way to keep your theme up to date is to add the theme repository
+as another remote that you can merge into your site.
+
+**Adding a new remote, `theme`**
+
+```
+git remote add theme git@github.com:hkennyv/next-theme-terminal.git
+```
+
+**Updating the theme**
+
+```
+git pull theme main
+```
+
+**NOTE:** If you've changed any of the theme files, there may be merge
+conflicts you will need to resolve to move forward.
+
 ## License
 
 Copyright © 2019-2020 Radosław Kozieł ([@panr](https://twitter.com/panr)) and Kenny Huynh ([@hkennyv](https://github.com/hkennyv)).
