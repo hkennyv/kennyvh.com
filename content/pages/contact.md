@@ -7,8 +7,8 @@ tags:
   - contact
 ---
 
-I'm fairly open to connecting and chatting! If you'd like to connect, consider
-the options below:
+I would love to connect & chat with you! Feel free to connect/reach out through
+any of the methods below:
 
 # Contact me
 

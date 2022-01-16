@@ -17,13 +17,13 @@ I'm a norcal native (Tracy, CA) that moved to sunny southern california where
 I graduated from the University of California, Irvine with a BS Electrical
 Engineering.
 
-I have wide experience in embedded systems, software, and devops engineering.
-I'm especially interested in supporting engineering infrastructure, tooling,
-and anything that helps engineering teams get shxt done.
+I have wide experience in software, devops, and embedded engineering.
+I'm generally interested in supporting engineering infrastructure, tooling,
+and improving developer experience (DX).
 
-I currently work at [ReJoule, Inc.](https://rejouleenergy.com/), a small
-clean-tech startup based out of southern california where we're tackling some
-really interesting problems surrounding EV's and advanced battery diagnostics.
+I currently work at [Amazon](https://smile.amazon.com/) as a Systems
+Development Engineer II (SysDE) working on tools and services for internal and
+external teams.
 
 ## Interests
 
@@ -31,6 +31,8 @@ I love staying active & trying new things. When I'm not working, you can find
 me:
 
 🏔 - hiking or camping
+
+🏂 - snowboarding
 
 🚲 - riding my bicycle and/or motorcycle
 
@@ -46,16 +48,18 @@ me:
 
 Currently: dabbling in rust 🦀 (see my [advent of code progress](https://github.com/hkennyv/aoc))
 
-## Computer Setup
+## Computer nerd
 
-I have **2** main machines that I daily drive, a laptop and a desktop.
+I'm a huge computer nerd. I have **2** main machines that I daily drive, a
+laptop and a desktop, in addition to a drawer full of raspberry pis and
+microcontrollers.
 
 My desktop is a dual-boot hackintosh with Mac OS Mojave and Windows 10. I'm
 currently rocking an AMD Ryzen 5 2600X, RX 580, with 24GB RAM.
 
 I recently upgraded my old Mid-2012 Macbook Pro (RIP) for a new 2020 Macbook
-Air M1 rocking Mac OS Big Sur with 512GB SSD and 16GB RAM. (I plan on writing
-a blog post about this soon!)
+Air M1 rocking Mac OS Big Sur with 512GB SSD and 16GB RAM (read about my
+[blog post](https://www.kennyvh.com/posts/upgrading-my-laptop) here). 
 
 I'm a total hardware nerd, so if you have any questions about my setup, I'd
 love to [chat](/contact).

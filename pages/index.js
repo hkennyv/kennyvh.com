@@ -5,23 +5,20 @@ import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 
 export default function Index({ config, posts }) {
+  const mostRecentPosts = posts.slice(0, 3);
+
   return (
     <Layout pageTitle={config.title} config={config}>
       <div className="index-content framed">
-        <h1 id="hello-there">Hello there! 👋</h1>
+        <h1 id="hello-there">Howdy! 👋</h1>
         <p>
           My name is <code>Kenny Huynh</code>, I'm a norcal native now living in
-          sunny southern california️.
+          sunny southern california.
         </p>
         <p>
-          I'm also a DevOps Engineer (& former embedded systems engineer) @{" "}
-          <a href="https://www.rejouleenergy.com">ReJoule, Inc.</a>{" "}
-        </p>
-        <p>
-          I love technology so you can often find me hacking away on{" "}
-          <a href="https://github.com/hkennyv">various projects and things</a>.
-          I also love going for a ride on my bicycle or motorcycle and I'm a
-          (very) new aspiring bedroom DJ.
+          I'm currently a <code>Systems Development Engineer (SysDE)</code> @{" "}
+          <a href="https://smile.amazon.com/">Amazon</a> working on developer
+          infrastructure that supports both internal and external teams.
         </p>
         <div>
           Feel free to:
@@ -53,6 +50,8 @@ export async function getStaticProps() {
   //
   // see: https://github.com/webpack/webpack/issues/12087
   let ctx = require.context("../content/posts", true, /\.\/.*\.md$/);
+
+  // posts are in descending order by date
   const posts = parseMarkdownFiles(ctx);
 
   return {
