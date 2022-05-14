@@ -1,3 +1,5 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
 [build]
-    command = "yarn build && yarn export"
-    publish = ".next"
+publish = ".next"
